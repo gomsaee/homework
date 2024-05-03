@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f4f4;
+  background-color: #fcfcfc;
 }
 section {
   position: relative;
@@ -18,7 +18,7 @@ img {
   width: 18px;
   height: 18px;
   background-color: #4cfe88;
-  border: 0.5px solid white;
+  border: 1px solid white;
   border-radius: 100%;
   position: absolute;
   right: 0;
@@ -36,15 +36,41 @@ img {
 .access-boy-box .access-img-button {
   margin-top: 20px;
 }
-.access-boy-box .access-img-button:nth-child(n + 2) {
-  margin-left: 20px;
-}
+.access-boy-box .access-img-button:nth-child(n + 2),
 .access-girl-box .access-img-button:nth-child(n + 2) {
   margin-left: 20px;
 }
-.access-boy-box .access-img-button:nth-child(-n + 2) .access-button {
-  background-color: #dbdbdb;
-}
+.access-boy-box .access-img-button:nth-child(-n + 2) .access-button,
 .access-girl-box .access-img-button:nth-child(odd) .access-button {
   background-color: #dbdbdb;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          flex를 지원하는 웹브라우저를 위한 스타일                   */
+/* -------------------------------------------------------------------------- */
+
+@supports (display: flex) {
+  section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .access-girl-box,
+  .access-boy-box {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+  }
+  .access-girl-box .access-img-button {
+    margin-top: 20px;
+  }
+  .access-boy-box .access-img-button {
+    margin-top: 0;
+  }
+  .access-boy-box .access-img-button:nth-child(-n + 2) .access-button {
+    background-color: #4cfe88;
+  }
+  .access-boy-box .access-img-button:nth-child(n + 3) .access-button,
+  .access-girl-box .access-img-button:nth-child(odd) .access-button {
+    background-color: #dbdbdb;
+  }
 }
