@@ -97,18 +97,28 @@ input {
 .login-settings-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 
   li {
     margin-top: 0.625rem;
   }
 }
+.login-keep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .fas {
   width: 24px;
   height: 24px;
   margin-right: 5px;
-  color: black;
+  color: var(--input-border-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: 50%;
+  padding-top: 2px;
 }
+
 /* 모바일 스타일 */
 @media (max-width: 767px) {
   .naver-login-form {
@@ -120,5 +130,8 @@ input {
   .login-keep {
     position: absolute;
     right: 0;
+    top: 0; /* 상단에 고정 */
+    margin-top: 20px; /* 원하는 만큼의 여백 추가 */
   }
 }
+/* 호버 포커스 단위바꾸기  */
