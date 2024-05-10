@@ -20,7 +20,11 @@
           <!-- SVG 이미지 -->
           <source srcset="../naver/naver_logo.svg" type="image/svg+xml" />
           <!-- PNG 이미지 -->
-          <img src="../naver/naver_logo.png" alt="네이버 로고" />
+          <img
+            src="../naver/naver_logo.png"
+            alt="네이버 로고"
+            class="logo-img"
+          />
         </picture>
         <!-- 아이디 입력 -->
 
@@ -44,14 +48,16 @@
         </div>
         <!-- 로그인 버튼 -->
 
-        <button>로그인</button>
+        <button class="login-button">로그인</button>
         <!-- 로그인 상태유지, on off   -->
 
-        <ul>
-          <li tabindex="0">
+        <ul class="login-settings-list">
+          <li tabindex="0" class="login-keep">
             <span class="fas fa-check"></span>로그인 상태유지
           </li>
-          <li><a href="ip_security.html" target="_blank">IP 보안 ON</a></li>
+          <li class="login-security">
+            <a href="ip_security.html" target="_blank">IP 보안 ON</a>
+          </li>
         </ul>
       </fieldset>
     </form>
