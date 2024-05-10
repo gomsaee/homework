@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네이버 로그인 폼</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../naver/naver.css" />
+  </head>
+  <body>
+    <form action="/" class="naver-login-form">
+      <h2 class="sr-only">네이버 로그인 폼</h2>
+      <fieldset>
+        <!-- 네이버 로고 이미지 삽입 -->
+
+        <picture tabindex="0">
+          <!-- SVG 이미지 -->
+          <source srcset="../naver/naver_logo.svg" type="image/svg+xml" />
+          <!-- PNG 이미지 -->
+          <img src="../naver/naver_logo.png" alt="네이버 로고" />
+        </picture>
+        <!-- 아이디 입력 -->
+
+        <div role="group">
+          <input
+            type="text"
+            id="useMail"
+            placeholder="아이디(이메일)"
+            name="useMail"
+          />
+        </div>
+        <!-- 비밀번호 입력 -->
+
+        <div role="group">
+          <input
+            type="text"
+            id="password"
+            placeholder="비밀번호"
+            name="password"
+          />
+        </div>
+        <!-- 로그인 버튼 -->
+
+        <button>로그인</button>
+        <!-- 로그인 상태유지, on off   -->
+
+        <ul>
+          <li tabindex="0">
+            <span class="fas fa-check"></span>로그인 상태유지
+          </li>
+          <li><a href="ip_security.html" target="_blank">IP 보안 ON</a></li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>

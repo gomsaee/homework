@@ -1,2 +1,7 @@
-# homework
-테킷 프론트엔드 스쿨 10기 과제 저장소
+# Homework
+
+HTML, CSS 과제 수행
+
+## 네이버 로그인 페이지 구현
+
+- [과제 설명](naver.md)
